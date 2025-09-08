@@ -1,0 +1,44 @@
+# Docker
+#Dockerfile
+#docker-compose.yml
+#docker-compose.prod.yml
+
+# Configurações sensíveis
+config/config.env
+config/*.key
+config/*.cert
+.env
+
+# Logs
+logs/*
+!.gitkeep
+
+# Diretórios temporários
+tmp/
+temp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# OS generated files
+ehthumbs.db
+Icon?

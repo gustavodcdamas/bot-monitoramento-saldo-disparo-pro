@@ -1,0 +1,13 @@
+services:
+  bot-saldo-disparo-pro:
+    image: infraestruturanewm/bot-saldo-disparo-pro:latest
+    container_name: bot-saldo-disparo-pro
+    restart: unless-stopped
+    volumes:
+      - ./config:/app/config:ro
+      - ./logs:/var/log/cron
+      - ./cron/crontab:/var/spool/cron/crontabs/appuser
+    environment:
+      - TZ=America/Sao_Paulo
+    env_file:
+      - ./config/config.env
