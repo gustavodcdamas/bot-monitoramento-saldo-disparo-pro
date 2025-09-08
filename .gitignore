@@ -8,6 +8,7 @@ config/config.env
 config/*.key
 config/*.cert
 .env
+*.env
 
 # Logs
 logs/*
@@ -41,4 +42,5 @@ coverage/
 
 # OS generated files
 ehthumbs.db
+
 Icon?
