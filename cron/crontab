@@ -1,0 +1,8 @@
+# Executar diariamente às 9:00 AM
+0 9 * * * /app/scripts/check_balance.sh >> /var/log/cron/cron.log 2>&1
+
+# Executar diariamente às 17:00 (5:00 PM)
+0 17 * * * /app/scripts/check_balance.sh >> /var/log/cron/cron.log 2>&1
+
+# Manter apenas logs dos últimos 7 dias (domingos à meia-noite)
+0 0 * * 0 find /var/log/cron -name "*.log" -mtime +7 -delete

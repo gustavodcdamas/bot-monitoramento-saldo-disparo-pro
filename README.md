@@ -1,11 +1,14 @@
 # Disparo Pro Balance Monitor 🐋
 
-Monitoramento automatizado de saldo da plataforma Disparo Pro com notificação no MS Teams.
+Monitoramento automatizado de saldo da plataforma Disparo Pro com notificação no MS Teams, e-mail, telegram e discord
 
 ## 📋 Funcionalidades
 
 - ✅ Consulta diária automática do saldo
 - ✅ Notificação no Microsoft Teams
+- ✅ Notificação no E-mail
+- ✅ Notificação no Telegram
+- ✅ Notificação no Discord
 - ✅ Container Dockerizado
 - ✅ Agendamento via Cron
 - ✅ Logs detalhados
@@ -19,7 +22,7 @@ Monitoramento automatizado de saldo da plataforma Disparo Pro com notificação 
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/seuusuario/disparopro-balance-monitor.git
+git clone https://github.com/gustavodcdamas/bot-monitoramento-saldo-disparo-pro.git
 cd disparopro-balance-monitor
 
 ## 🐋 Como usar via DockerHub
@@ -27,7 +30,7 @@ cd disparopro-balance-monitor
 ### Pull da imagem:
 
 ```bash
-docker pull seuusuario/disparopro-balance-monitor:latest
+docker pull gustavodcdamas/bot-monitoramento-saldo-disparo-pro
 ```
 
 ### Executar container:
@@ -39,7 +42,7 @@ docker run -d \
   -v $(pwd)/logs:/var/log/cron \
   -e TZ=America/Sao_Paulo \
   --restart unless-stopped \
-  seuusuario/disparopro-balance-monitor:latest
+  gustavodcdamas/bot-monitoramento-saldo-disparo-pro
 ```
 
 ### Usando Docker Compose:
@@ -48,7 +51,7 @@ docker run -d \
 version: '3.8'
 services:
   disparopro-monitor:
-    image: seuusuario/disparopro-balance-monitor:latest
+    image: gustavodcdamas/bot-monitoramento-saldo-disparo-pro:latest
     volumes:
       - ./config:/app/config:ro
       - ./logs:/var/log/cron
