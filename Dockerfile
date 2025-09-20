@@ -1,7 +1,7 @@
 FROM alpine:3.14
 
 # Metadata
-LABEL maintainer="Seu Nome <seu.email@exemplo.com>"
+LABEL maintainer="Seu Nome gustavodcdamas@gmail.com"
 LABEL version="1.0"
 LABEL description="Bot para monitoramento de saldo Disparo Pro"
 
@@ -45,4 +45,5 @@ ENV CONFIG_FILE=/app/config/config.env
 VOLUME /var/log/cron
 
 # Comando de inicialização
+
 CMD ["crond", "-f", "-d", "8", "-c", "/var/spool/cron/crontabs"]
