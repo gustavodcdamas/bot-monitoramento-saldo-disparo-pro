@@ -1,6 +1,6 @@
 # Disparo Pro Balance Monitor 🐋
 
-Monitoramento automatizado de saldo da plataforma Disparo Pro com notificação no MS Teams, e-mail, telegram e discord
+Monitoramento automatizado do saldo da plataforma Disparo Pro com notificação no MS Teams, e-mail, telegram e discord
 
 ## 📋 Funcionalidades
 
@@ -83,5 +83,6 @@ Os logs estão disponíveis em `./logs/disparopro.log`
 | `TZ` | Fuso horário | Não |
 
 ## 📝 Licença
+
 
 MIT License
