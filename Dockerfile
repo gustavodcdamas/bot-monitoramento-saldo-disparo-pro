@@ -1,7 +1,7 @@
 FROM alpine:3.14
 
 # Metadata
-LABEL maintainer="Seu Nome gustavodcdamas@gmail.com"
+LABEL maintainer="gustavodcdamas@gmail.com"
 LABEL version="1.0"
 LABEL description="Bot para monitoramento de saldo Disparo Pro"
 
